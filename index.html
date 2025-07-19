@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha M - Aspiring Software Developer</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background: #ff3366;
+            padding: 15px 30px;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: yellow;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            width: 60%;
+            padding-right: 20px;
+        }
+
+        .about-image img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .skills-list {
+            width: 60%;
+        }
+
+        .skill {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .skill-name {
+            width: 100px;
+            font-weight: bold;
+        }
+
+        .skill-bar {
+            background: #ddd;
+            height: 10px;
+            border-radius: 5px;
+            width: 50%;
+            position: relative;
+        }
+
+        .skill-fill {
+            height: 100%;
+            border-radius: 5px;
+            background: #ff3366;
+            position: absolute;
+        }
+
+        .skill-image img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: left;
+        }
+
+        .project {
+            padding: 20px;
+            border-radius: 10px;
+            background: #ffd1dc;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-container {
+            text-align: center;
+            padding: 20px;
+            background: #ff3366;
+            color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .contact-container a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-container a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #ff3366;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .projects-container .project p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 20px;
+            background-color: #ff3366;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            background-color: #ff1a4d;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-list {
+                width: 100%;
+            }
+
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Nisha M - Aspiring Software Developer
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container about-container" id="about">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>Hi! I'm Nisha M, a passionate software developer skilled in HTML, CSS, and Java. I enjoy building interactive and responsive applications that create an impact. Constantly learning new technologies, I aim to deliver seamless user experiences.</p>
+        </div>
+        <div class="about-image">
+            <img src="https://media.licdn.com/dms/image/v2/D4E35AQFCB1gCHydtlg/profile-framedphoto-shrink_400_400/B4EZZcsdvPHYAc-/0/1745311882489?e=1753509600&v=beta&t=duPBmw4zhY9CwmGCsVmslXGABPZI4iKL4VvgDeMlD5g" style="border-radius: 155px;"alt="Female Developer">
+        </div>
+    </div>
+
+    <div class="container skills-container" id="skills">
+        <div class="skills-list">
+            <h2>Skills</h2>
+            <div class="skill">
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 80%;"></div>
+                </div>
+            </div>            <div class="skill">
+                <span class="skill-name">Java</span>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="skill-image">
+            <img src="https://th.bing.com/th/id/OIP.Ixvid4vPZm6h3Pq8UVXJUQHaEK?w=325&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Female Developer">
+        </div>
+    </div>
+
+    <div class="container" id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>A web app that provides real-time weather updates using OpenWeatherMap API. Users can search for any city to get temperature, humidity, and forecast details.</p>
+                <p><a href="https://github.com/NishaManivannan/PRODIGY_WD_05" target="_blank">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>TicTacToe Game</h3>
+                <p>A fun and interactive two-player TicTacToe game built with HTML, CSS, and JavaScript. It includes a responsive UI and logic for game-winning conditions.</p>
+                <p><a href="https://github.com/NishaManivannan/PRODIGY_WD_03" target="_blank">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>Stopwatch</h3>
+                <p>A stopwatch app built using HTML, CSS, and JavaScript, allowing users to start, stop, and reset the timer easily. Users can also make lap counts offering a more detailed view.</p>
+                <p><a href="https://github.com/NishaManivannan/PRODIGY_WD_02" target="_blank">View Project</a></p>
+            </div>
+            <div class="project">
+                <h3>Responsive Landing Page - Spice World</h3>
+                <p>A responsive landing page for a fictional spice shop, "Spice World," where users can order different spices. Built using HTML, CSS, and JavaScript, offering an easy shopping experience.</p>
+                <p><a href="https://github.com/NishaManivannan/PRODIGY_WD_01" target="_blank">View Project</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <p>Feel free to connect with me:</p>
+            <p><a href="https://github.com/NishaManivannan" target="_blank">GitHub Profile</a></p>
+            <p><a href="https://www.linkedin.com/in/nishamanivannan/" target="_blank">LinkedIn Profile</a></p>
+            <p>Email: <a href="mailto:nishamanivannann@gmail.com">Nisha M</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
